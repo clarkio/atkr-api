@@ -22,4 +22,4 @@ app.get('/api/data', (req, res) => {
   res.end();
 });
 
-app.listen(9001, () => console.log('API running on port 9001'));
+app.listen(process.env.PORT || 9001, () => console.log('The API is running'));
