@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
 });
 
 app.post('/api/data', (req, res) => {
-  console.log(req);
+  console.log(req.body);
   res.end();
 });
 
